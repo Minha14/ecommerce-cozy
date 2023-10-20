@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="category.css">
+</head>
+<body>
+  <h1>Product Details</h1>
+  <div id="product-container"></div>
+  <div id="cart-container">
+    <h2>Cart</h2>
+    <ul id="cart"></ul>
+  </div>
+  <div id="wishlist-container">
+    <h2>Wishlist</h2>
+    <ul id="wishlist"></ul>
+  </div>
+
+  <script>
+    const products = [
+      // Your product data here
+      // ...
+      {
+    name: "Cute Teddy for Infants",
+    ageCategory: "all",
+    imageURL: "https://m.media-amazon.com/images/I/81vu8DlihdL._AC_UF894,1000_QL80_.jpg",
+    price: "₹500.00",
+  },
+  
+  {
+    name: "Cute Teddy for Infants",
+    ageCategory: "all ",
+    imageURL: "https://i.ebayimg.com/images/g/fKEAAOSwhORivjzI/s-l1600.jpg",
+    price: "₹750.00",
+  },
+  {
+    name: "Cute Teddy for Infants",
+    ageCategory: "all ",
+    imageURL: "https://i.ebayimg.com/images/g/RAwAAOSwL35jeXNW/s-l1600.jpg",
+    price: "₹950.00",
+  },
+  {
+    name: "Cute Teddy for Infants",
+    ageCategory: "all ",
+    imageURL: "https://m.media-amazon.com/images/I/81PbA9T184S._AC_SL1500_.jpg",
+    price: "₹750.00",
+
+  },
+  {
+    name: "Cute Teddy for Infants",
+    ageCategory: "all",
+    imageURL: "https://cdn.fcglcdn.com/brainbees/images/products/438x531/10408182a.webp",
+    price: "₹750.00",
+  },
+  {
+    name: "Teddy for Children",
+    ageCategory: "all ",
+    imageURL: "https://m.media-amazon.com/images/I/61I1FTs-OdL.jpg",
+    price: "₹550.00",
+  },
+  {
+    name: "Elegant Teddy for Adults",
+    ageCategory: "all ",
+    imageURL: "https://m.media-amazon.com/images/I/71b6gfyhTaL._AC_UF894,1000_QL80_.jpg",
+    price: "₹950.00",
+  },
+  {
+    name: "Teddy for Children",
+    ageCategory: "kids",
+    imageURL: "https://m.media-amazon.com/images/I/81ZifMbP2dL._AC_UF1000,1000_QL80_.jpg",
+    price: "₹550.00",
+  },
+  {
+    name: "Teddy for Children",
+    ageCategory: "kids",
+    imageURL: "https://m.media-amazon.com/images/I/61RB2PDr-uL.jpg",
+    price: "₹550.00",
+  },
+  {
+    name: "Teddy for Children",
+    ageCategory: "kids",
+    imageURL: "https://pearlriver.com/cdn/shop/products/ENE-HK.jpg?v=1668638672",
+    price: "₹550.00",
+  },
+  {
+    name: "Teddy for Children",
+    ageCategory: "kids",
+    imageURL: "https://rukminim2.flixcart.com/image/850/1000/km0x5zk0/stuffed-toy/m/r/j/white-big-size-unicorn-teddy-bear-for-kids-girls-children-original-imagfyp2dtutaex7.jpeg?q=90",
+    price: "₹550.00",
+  },
+  {
+    name: "Teddy for Children",
+    ageCategory: "kids",
+    imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSXZfMCjEnaxjxSkgD739iWy69AcFPkAgAEQ&usqp=CAU",
+    price: "₹550.00",
+  },
+  {
+    name: "Big Hug Teddy for Teens",
+    ageCategory: "kids",
+    imageURL: "https://m.media-amazon.com/images/I/61RDj3xr9BL.jpg",
+    price: "₹750.00",
+  },
+  {
+    name: "Big Hug Teddy for Teens",
+    ageCategory: "kids",
+    imageURL: "https://m.media-amazon.com/images/I/61Avy3+3R8L._AC_UF350,350_QL80_.jpg",
+    price: "₹750.00",
+  },
+  {
+    name: "Big Hug Teddy for Teens",
+    ageCategory: "adults",
+    imageURL: "https://images-na.ssl-images-amazon.com/images/I/51WoJwtNVnL.jpg",
+    price: "₹750.00",
+  },
+  {
+    name: "Big Hug Teddy for Teens",
+    ageCategory: "adults",
+    imageURL: "https://i5.walmartimages.com/asr/731ff1f7-ab22-488d-89e0-0156d5997b51.08e4d5e54c3a10db91a6e175b57a1694.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+    price: "₹750.00",
+  },
+  {
+    name: "Big Hug Teddy for Teens",
+    ageCategory: "adults",
+    imageURL: "https://une-licorne.com/cdn/shop/products/peluche-licorne-gros-nounours-licorne-6.jpg?v=1651290524&width=1946",
+    price: "₹750.00",
+  },
+  {
+    name: "Big Hug Teddy for Teens",
+    ageCategory: "adults",
+    imageURL: "https://rukminim1.flixcart.com/image/850/1000/kingqkw0-0/baby-chair-belt/7/w/n/sam0999-samaaya-original-imafydzfjnnnem5h.jpeg?q=20",
+    price: "₹750.00",
+  },
+  
+  {
+    name: "Elegant Teddy for Adults",
+    ageCategory: "adults",
+    imageURL: "https://m.media-amazon.com/images/I/71ACZiJtMwL._AC_UF894,1000_QL80_.jpg",
+    price: "₹950.00",
+  },
+  
+  {
+    name: "Elegant Teddy for Adults",
+    ageCategory: "adults",
+    imageURL: "https://toysonejapan.com/cdn/shop/products/s-l1600_14_3df2c7f4-047d-4e43-8a37-8801e0a2a489_491x700.jpg?v=1675996682",
+    price: "₹950.00",
+  },
+  {
+    name: "Elegant Teddy for Adults",
+    ageCategory: "adults",
+    imageURL: "https://m.media-amazon.com/images/I/8106BurGPPL._AC_UF1000,1000_QL80_.jpg",
+    price: "₹950.00",
+  },
+  {
+    name: "Elegant Teddy for Adults",
+    ageCategory: "adults",
+    imageURL: "https://media.karousell.com/media/photos/products/2023/5/28/giant_unicorn_plush_100cm_1685276694_5941de2f.jpg",
+    price: "₹950.00",
+  },
+    ];
+
+    const productContainer = document.getElementById('product-container');
+    const cartContainer = document.getElementById('cart');
+    const wishlistContainer = document.getElementById('wishlist');
+
+    const cart = [];
+    const wishlist = new Set();
+    
+    function renderProducts() {
+      products.forEach((product, index) => {
+        const productCard = document.createElement('div');
+        productCard.className = 'product-card';
+
+        const image = document.createElement('img');
+        image.src = product.imageURL;
+        image.alt = product.name;
+        image.style.maxHeight = '150px';
+        productCard.appendChild(image);
+
+        const name = document.createElement('h3');
+        name.textContent = product.name;
+        productCard.appendChild(name);
+
+        const ageCategory = document.createElement('p');
+        ageCategory.textContent = 'Age: ' + product.ageCategory;
+        productCard.appendChild(ageCategory);
+
+        const price = document.createElement('p');
+        price.textContent = 'Price: ' + product.price;
+        productCard.appendChild(price);
+
+        const addToCartButton = document.createElement('button');
+        addToCartButton.textContent = 'Add to Cart';
+        addToCartButton.addEventListener('click', () => addToCart(product));
+        productCard.appendChild(addToCartButton);
+
+        const wishlistButton = document.createElement('button');
+        wishlistButton.textContent = 'Add to Wishlist';
+        wishlistButton.className = wishlist.has(index) ? 'wishlist-button added' : 'wishlist-button';
+        wishlistButton.addEventListener('click', () => toggleWishlist(product, wishlistButton));
+        productCard.appendChild(wishlistButton);
+
+        productContainer.appendChild(productCard);
+      });
+    }
+
+    function addToCart(product) {
+      cart.push(product);
+      renderCart();
+    }
+
+    function renderCart() {
+      cartContainer.innerHTML = '';
+      cart.forEach(product => {
+        const cartItem = document.createElement('li');
+        cartItem.textContent = product.name + ' - ' + product.price;
+        cartContainer.appendChild(cartItem);
+      });
+    }
+
+    function toggleWishlist(product, wishlistButton) {
+      const index = products.indexOf(product);
+      if (wishlist.has(index)) {
+        wishlist.delete(index);
+      } else {
+        wishlist.add(index);
+      }
+      wishlistButton.classList.toggle('added');
+      renderWishlist();
+    }
+
+    function renderWishlist() {
+      wishlistContainer.innerHTML = '';
+      wishlist.forEach(index => {
+        const wishlistItem = document.createElement('li');
+        wishlistItem.textContent = products[index].name;
+        wishlistContainer.appendChild(wishlistItem);
+      });
+    }
+
+    renderProducts();
+  </script>
+</body>
+</html>

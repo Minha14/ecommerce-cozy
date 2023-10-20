@@ -1,0 +1,96 @@
+/* CSS */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background-image: url('https://www.example.com/background-pattern.png'); /* Replace with your background pattern image URL */
+  }
+  
+  
+  /* Adjust h1 styling for better visual separation */
+  h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+   
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    color: #d63297;
+    margin-bottom: 10px;
+  }
+ 
+  input,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #d63297;
+    border: 1px solid #f7359f;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #ff00b3;
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #ff00b3;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  button:hover {
+    background-color: #d63297;
+  }
+  
+  #successMessage {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #dff0d8;
+    color: #f75da5;
+    border: 1px solid #d6e9c6;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+    animation: fadeInOut 2s ease-in-out;
+  }
+  
+  /* Animation */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

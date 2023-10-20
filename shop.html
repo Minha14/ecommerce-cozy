@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <meta name="description" content="bootstrap pro">
+        <title>CozyCubs</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/flaticon.css">
+        
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/pages.css">
+        <link rel="stylesheet" href="css/default theme.css">
+        <link rel="stylesheet" href="css/animate.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        
+
+    </head>
+    
+
+    <body>
+      
+         <!--option box-->
+
+         <section class="option-box">
+          <div class="color-option">
+              <h4>color option</h4>
+              <ul class="list-unstyled">
+                  <li data-value="css/default theme.css"></li>
+                  <li data-value="css/blue theme.css"></li>
+                  <li data-value="css/orange theme.css"></li>
+                  <li data-value="css/yellow theme.css"></li>
+                  <li data-value="css/purple theme.css"></li>
+              </ul>
+          </div>
+          <i class="fas fa-cog fa-2x fa-spin gear-check"></i>
+      </section> 
+
+      
+      <!--start navbar-->
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #1F1F1F;">
+
+            <div class="container-fluid">
+
+              <a class="navbar-brand" href="#">Cozy <span>Cubs</span> </a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="shop.html">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="about.html">About</a>
+                  </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Latest
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="shop.html">Product List</a></li>
+                      <li><a class="dropdown-item" href="product-details.html">Product Details</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Blog
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
+                      <li><a class="dropdown-item" href="Blog.html">Blog Details</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="login.html">Login</a></li>
+                      <li><a class="dropdown-item" href="shoppingCart.html"> Cart</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="orderConfirmation.html">Confirmation</a></li>
+                      <li><a class="dropdown-item" href="checkout.html">Product Checkout</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="contact.html" >Contact us</a>
+                  </li>
+                </ul>
+                <ul class="nav justify-content-end">
+                  <li>
+                    <div class="search-wrapper">
+                      <div class="input-holder">
+                        <input type="text" class="search-input" placeholder="Type to search" />
+                        <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                      </div>
+                      <span class="close" onclick="searchToggle(this, event);"></span>
+                    </div>
+                  </li>
+                <div class="age-category">
+                  <h6 class="age-select" >Teddy <span>For&nbsp;</span> </h6>
+                  <button class="btn btn-primary" data-category="all">All</button>
+                  <button class="btn btn-primary" data-category="kids">Kids</button>
+                  <button class="btn btn-primary" data-category="adults">Adults</button>
+              </div>
+              </ul>
+              </div>
+            </div>
+          </nav>
+        
+      <!--end navbar-->
+      
+      <!--start carousal-->
+
+
+
+  <section class="the-carousel">
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" style="background-image:url('https://wallpaperaccess.com/full/4148519.jpg')">
+      <div class="container">
+        <h1>Teddy Shop</h1>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+      <!--end carousal-->
+
+      <!-- cover end -->
+
+        
+      <!-- products-gallary start -->
+
+      <div class="products-gallary">
+          <div class="container text-center">
+            
+              <div class="row text-center ">
+                <div class="col-lg-12">
+                  <h1 class="wow animate__flipInsY" data-wow-duration="3s">Our Teddies</h1>
+                </div>
+                <div class="row justify-content-between">
+                  
+                  <div class="properties">
+                  <nav>
+                  <ul class="nav col-lg-5">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">NewestArrivals</a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">All</a></li>
+                        <li><a class="dropdown-item" href="#">Kids</a></li>
+                        <li><a class="dropdown-item" href="#">Adults</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Price high to low</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Most populer</a>
+                    </li>
+                  </ul>
+
+                </nav>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                  <option selected>40 per page</option>
+                  <option value="1">50 per page</option>
+                  <option value="2">60 per page</option>
+                  <option value="3">70 per page</option>
+                </select>
+              </div>
+                </div>
+
+              <div id="productsContainer" class="row justify-content-between">  
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6" onclick="redirectToProductDetails('product1')" data-category="kids">
+                  <div class="product text-center wow animate__bounceInLeft" data-wow-duration="2s">
+                    <div class="product-img">
+                      <img src="https://pbs.twimg.com/media/FJIPQKyXoAIsWxP.jpg" alt="product1">    
+                    </div>
+                    <div class="teddy-caption">
+                      <h3>hello kitty x build bear</h3>
+                      <span>$ 74</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6" onclick="redirectToProductDetails('product2')" data-category="kids">
+                  <div class="product text-center wow animate__fadeInUp" data-wow-duration="2s">
+                    <div class="product-img">
+                      <img src="https://hellosewing.com/wp-content/uploads/free-teddy-bear-patterns-675x510.jpg" alt="product2"> 
+                    </div>
+                    <div class="teddy-caption">
+                      <h3>teddy bear patterns to sew</h3>
+                      <span>$ 43</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6" onclick="redirectToProductDetails('product3')" data-category="adults">
+                  <div class="product text-center wow animate__bounceInRight" data-wow-duration="2s">
+                    <div class="product-img">
+                      <img src="https://i.ytimg.com/vi/9h0qWyq65wU/mqdefault.jpg" alt="product3"> 
+                    </div>
+                    <div class="product-caption">
+                      <h3>rainbowcorns sequin blind bags</h3>
+                      <span>$ 10</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6" onclick="redirectToProductDetails('product4')" data-category="adults">
+                  <div class="product text-center wow animate__bounceInLeft" data-wow-duration="2s">
+                    <div class="product-img">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1m0qsABoEGEzofrjn4tm0gM7F20oZc69OTaPy2Gw6ja2tWduPeeKhoDuvNbJsDJ7ZsQE&usqp=CAU" alt="product4"> 
+                    </div>
+                    <div class="product-caption">
+                      <h3>huge pickachu stuffed animal</h3>
+                      <span>$ 450</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6" onclick="redirectToProductDetails('product5')">
+                  <div class="product text-center wow animate__fadeInUp" data-wow-duration="2s">
+                    <div class="product-img">
+                      <img src="https://okasaneko.files.wordpress.com/2012/08/bab-leopard-kitty-03.jpg" alt="product5"> 
+                    </div>
+                    <div class="product-caption">
+                      <h3>hello kitty builder</h3>
+                      <span>$ 33</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6" onclick="redirectToProductDetails('product6')">
+                  <div class="product text-center wow animate__bounceInRight" data-wow-duration="2s">
+                    <div class="product-img">
+                      <img src="https://4.bp.blogspot.com/-lRXPWNRZZA8/UaO5JDaUYjI/AAAAAAAABKU/7vVcw3nzG9w/s1600/P5270359+Watermarked.JPG" alt="product3"> 
+                    </div>
+                    <div class="product-caption">
+                      <h3>kwaii blush:small fry kitty</h3>
+                      <span>$ 12</span>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <button type="button" id="viewMoreButton" class="btn btn-dark">View More Products</button>
+            </div>
+            <div id="additionalProductsContainer" class="row justify-content-between">
+              <!-- Additional products will be added here -->
+            </div>            
+        </div>
+      
+        <!-- products-gallary end -->
+       
+
+        <!--? Shop Method Start-->
+        <div class="shop-method">
+          <div class="container">
+              <div class="method-wrapper wow animate__fadeInUp" data-wow-duration="2s">
+                  <div class="row d-flex justify-content-between ">
+                      <div class="col-xl-4 col-lg-4 col-md-6">
+                          <div class="single-method mb-40 wow animate__fadeInLeft" data-wow-duration="2s">
+                            <a href="#">
+                              <i class="fas fa-truck 3X"></i>
+                            </a>
+                              <h5>Free Shipping Method</h5>
+                              <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                          </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-6">
+                          <div class="single-method mb-40 wow animate__fadeInUp" data-wow-duration="2s">
+                              <a href="#">
+                                <i class="fas fa-unlock"></i>
+                              </a>
+                              <h5>Secure Payment System</h5>
+                              <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                          </div>
+                      </div> 
+                      <div class="col-xl-4 col-lg-4 col-md-6">
+                          <div class="single-method mb-40 wow animate__fadeInRight" data-wow-duration="2s">
+                              <a href="#">
+                                <i class="fas fa-sync"></i> 
+                              </a>
+                              <h5>Secure Payment System</h5>
+                              <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- Shop Method End-->
+
+        <!-- Footer Start-->
+        <div class="footer">
+        <div class="container">
+            <div class="row ">
+                <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
+                    <div class="footer-caption mb-50">
+                            <div class="footer-logo">
+                              <a href="index.html">
+                                <h1>Cozy <span>Cubs</span> </h1>
+                              </a>
+                              
+                            </div>
+                            
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
+                    <div class="footer-caption mb-50">
+                        <div class="footer-tittle">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="#"> Offers & Discounts</a></li>
+                                <li><a href="#"> Get Coupon</a></li>
+                                <li><a href="contact.html">  Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
+                    <div class="footer-caption mb-50">
+                        <div class="footer-tittle">
+                            <h4>Support</h4>
+                            <ul>
+                                <li><a href="#">Frequently Asked Questions</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Report a Payment Issue</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer end-->
+
+            <footer>
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-7 col-lg-8 col-md-7">
+                    <div class="footer-copy-right text-center">
+                      <p>Copyright &copy; All rights reserved by | <span class="wow animate__flipInY"
+                          data-wow-duration="3s"><a href="">Minha
+                            </a> </span> </p>
+                    </div>
+                  </div>
+                  <div class="col-xl-5 col-lg-4 col-md-5">
+                    <div class="footer-copy-left text-center">
+                      <ul>
+                        <li><a href="" target="_blank"><i
+                              class="fab fa-facebook-f " aria-hidden="true"></i></a></li>
+      
+                        <li><a href="" target="_blank"><i class="fab fa-instagram "
+                              aria-hidden="true"></i></a></li>
+      
+                        <li><a href="" target="_blank"><i
+                              class="fab fa-linkedin-in"></i></a></li>
+      
+                        <li><a href="" target="_blank"><i class="fab fa-whatsapp " aria-hidden="true"
+                              aria-hidden="true"></i></a></li>
+      
+                        <li><a href="" target="_blank"><i class="fab fa-github "
+                              aria-hidden="true"></i></a></li>
+      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <div id="scroll-top">
+              <i class="fas fa-level-up-alt fa-3x"></i>
+            </div>
+
+            
+            <script src="js/popper.min.js"></script>
+            <script src="js/jquery-3.6.0.min.js"></script>
+            <script src="js/bootstrap.js"></script>
+            <script src="js/plugins.js"></script>
+            <script src="js/wow.min.js"></script>
+            <script src="js/script.js"></script>
+            <script src="js/custom.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+            <script>
+              new WOW().init();
+          </script>
+          <script>
+            
+          </script>
+          <script>
+            // JavaScript to add 'loaded' class to body after the page loads
+window.addEventListener("load", function () {
+    document.body.classList.add("loaded");
+  });
+  
+          </script>
+
+<script>
+  // Array of additional products to be displayed
+  const additionalProducts = [
+    {
+      id: 'product7',
+      category: 'adults',
+      name: 'G-Shock',
+      price: '$ 250',
+      imgSrc: 'img/gallery/8.jfif'
+    },
+    {
+      id: 'product8',
+      category: 'kids',
+      name: 'Vincera',
+      price: '$ 50',
+      imgSrc: 'img/gallery/9.jfif'
+    },
+    {
+      id: 'product9',
+      category: 'G-Shock',
+      name: 'Seiko',
+      price: '$ 250',
+      imgSrc: 'img/gallery/8.jfif'
+    },
+    {
+      id: 'product10',
+      category: 'adults',
+      name: 'Fastrack',
+      price: '$ 25',
+      imgSrc: 'img/gallery/new_product1.png'
+    },
+    {
+      id: 'product11',
+      category: 'all',
+      name: 'Rado',
+      price: '$ 75',
+      imgSrc: 'img/gallery/new_product2.png'
+    },
+    {
+      id: 'product12',
+      category: 'adults',
+      name: 'Movado',
+      price: '$ 100',
+      imgSrc: 'img/gallery/new_product3.png'
+    }
+  ];
+  
+  // Function to create a product card element
+  function createProductCard(product) {
+    return `
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6" onclick="redirectToProductDetails('${product.id}')" data-category="${product.category}">
+        <div class="watch-product text-center wow animate__fadeInUp" data-wow-duration="2s">
+          <div class="watch-product-img">
+            <img src="${product.imgSrc}" alt="${product.id}">
+          </div>
+          <div class="watch-product-caption">
+            <h3>${product.name}</h3>
+            <span>${product.price}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+  
+  // Function to add additional products when the button is clicked
+  function addAdditionalProducts() {
+    const container = document.getElementById('additionalProductsContainer');
+    additionalProducts.forEach(product => {
+      container.innerHTML += createProductCard(product);
+    });
+  }
+
+   
+
+  
+  // Attach a click event listener to the "View More Products" button
+  const viewMoreButton = document.getElementById('viewMoreButton');
+  viewMoreButton.addEventListener('click', addAdditionalProducts);
+
+
+  </script>
+  
+  <script>
+    // Function to toggle the search bar
+    function searchToggle(obj, evt){
+      var container = $(obj).closest('.search-wrapper');
+      if(!container.hasClass('active')){
+        container.addClass('active');
+        evt.preventDefault();
+      }
+      else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+        container.removeClass('active');
+        container.find('.search-input').val('');
+      }
+    }
+  
+    // Function to filter products based on the search query
+    function searchProducts(query) {
+      const products = document.querySelectorAll('.watch-product');
+  
+      products.forEach(product => {
+        const productName = product.querySelector('.watch-product-caption h3').textContent.toLowerCase();
+        if (productName.includes(query.toLowerCase())) {
+          product.style.display = 'block';
+        } else {
+          product.style.display = 'none';
+        }
+      });
+    }
+  
+    // Attach a click event listener to the search icon
+    const searchIcon = document.querySelector('.search-icon');
+    searchIcon.addEventListener('click', (event) => {
+      const searchInput = document.querySelector('.search-input');
+      const searchTerm = searchInput.value;
+      searchProducts(searchTerm);
+      event.stopPropagation();
+    });
+  
+    // Attach a keyup event listener to the search input for real-time filtering
+    const searchInput = document.querySelector('.search-input');
+    searchInput.addEventListener('keyup', () => {
+      const searchTerm = searchInput.value;
+      searchProducts(searchTerm);
+    });
+  </script>
+
+  </body>
+
+</html>

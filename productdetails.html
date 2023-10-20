@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CozyCubs</title>
+  <link rel="stylesheet" href="css/productdetails.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+  <!-- css files -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/default theme.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- Google links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+
+</head>
+<body>
+
+ <!--option box-->
+
+ <section class="option-box">
+  <div class="color-option">
+    <h4>color option</h4>
+    <ul class="list-unstyled">
+      <li data-value="css/default theme.css"></li>
+      <li data-value="css/blue theme.css"></li>
+      <li data-value="css/orange theme.css"></li>
+      <li data-value="css/yellow theme.css"></li>
+      <li data-value="css/purple theme.css"></li>
+    </ul>
+  </div>
+  <i class="fas fa-cog fa-2x fa-spin gear-check"></i>
+</section>
+
+<!--start navbar-->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #1F1F1F;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Cozy <span>Cubs</span> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shop.html">Shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Latest
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="shop.html">Product List</a></li>
+            <li><a class="dropdown-item" href="product-details.html">Product Details</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Blog
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="Blog.html">Blog</a></li>
+            <li><a class="dropdown-item" href="Blog.html">Blog Details</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Pages
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="login.html">Login</a></li>
+            <li><a class="dropdown-item" href="shoppingCart.html"> Cart</a></li>
+            
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="orderConfirmation.html">Confirmation</a></li>
+            <li><a class="dropdown-item" href="checkout.html">Product Checkout</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="contact.html">Contact us</a>
+        </li>
+      </ul>
+      <ul class="nav justify-content-end">
+        <li>
+          <div class="search-wrapper">
+            <div class="input-holder">
+              <input type="text" class="search-input" placeholder="Type to search" />
+              <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+            </div>
+            <span class="close" onclick="searchToggle(this, event);"></span>
+          </div>
+        </li>
+        <li>
+          <a href="login.html">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <li>
+          <a href="shoppingCart.html">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--end navbar-->
+
+
+
+<section class="product-details-container">
+  <div class="product-details">
+    <div class="product-image">
+      <img src="https://pbs.twimg.com/media/FJIPQKyXoAIsWxP.jpg" alt="Product Image">
+    </div>
+    <div class="product-info">
+      <h2 class="product-name">hello kitty x build bear</h2>
+      <span class="product-price" id="product-price">$100</span>
+      
+      <h3 class="product-features-title">Product Features:</h3>
+      <ul class="product-features">
+        <li>cute</li>
+        <li>soft</li>
+        <li>high-quality</li>
+      </ul>
+      <div class="product-actions">
+        <div class="quantity-controls">
+          <button class="btn-quantity" onclick="decreaseQuantity()">-</button>
+          <input type="number" min="1" value="1" id="quantity">
+          <button class="btn-quantity" onclick="increaseQuantity()">+</button>
+        </div>
+        <button class="btn-buy-now" onclick="buyNow()">Buy Now</button>
+        <button class="btn-add-to-cart" onclick="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+         
+      <!-- Add similar products here -->
+    
+ 
+
+<!--? Shop Method Start-->
+
+<div class="shop-method">
+  <div class="container">
+    <div class="method-wrapper wow animate__fadeInUp" data-wow-duration="2s">
+      <div class="row d-flex justify-content-between ">
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="single-method mb-40 wow animate__fadeInLeft" data-wow-duration="2s">
+            <a href="#">
+              <i class="fas fa-truck 3X"></i>
+            </a>
+            <h5>Free Shipping Method</h5>
+            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="single-method mb-40 wow animate__fadeInUp" data-wow-duration="2s">
+            <a href="#">
+              <i class="fas fa-unlock"></i>
+            </a>
+            <h5>Secure Payment System</h5>
+            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6">
+          <div class="single-method mb-40 wow animate__fadeInRight" data-wow-duration="2s">
+            <a href="#">
+              <i class="fas fa-sync"></i>
+            </a>
+            <h5>Secure Payment System</h5>
+            <p>aorem ixpsacdolor sit ameasecur adipisicing elitsf edasd.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Shop Method End-->
+
+<!-- Footer Start-->
+<div class="footer">
+  <div class="container">
+    <div class="row ">
+      <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6">
+        <div class="footer-caption mb-50">
+          <div class="footer-logo">
+            <a href="index.html">
+              <h1>Cozy<span>Cubs</span> </h1>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-xl-2 col-lg-3 col-md-3 col-sm-5">
+        <div class="footer-caption mb-50">
+          <div class="footer-tittle">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#"> Offers & Discounts</a></li>
+              <li><a href="#"> Get Coupon</a></li>
+              <li><a href="contact.html"> Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
+        <div class="footer-caption mb-50">
+          <div class="footer-tittle">
+            <h4>Support</h4>
+            <ul>
+              <li><a href="#">Frequently Asked Questions</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Report a Payment Issue</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Footer end-->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-7 col-lg-8 col-md-7">
+            <div class="footer-copy-right text-center">
+              <p>Copyright &copy; All rights reserved by | <span class="wow animate__flipInY"
+                  data-wow-duration="3s"><a href="https://www.linkedin.com/in/n-ajanthan-6922aa235/">Minha
+                    </a> </span> </p>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-4 col-md-5">
+            <div class="footer-copy-left text-center">
+              <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=100024534559404" target="_blank"><i
+                      class="fab fa-facebook-f " aria-hidden="true"></i></a></li>
+
+                <li><a href="https://www.instagram.com/ajanth_21/" target="_blank"><i class="fab fa-instagram "
+                      aria-hidden="true"></i></a></li>
+
+                <li><a href="https://www.linkedin.com/in/n-ajanthan-6922aa235/" target="_blank"><i
+                      class="fab fa-linkedin-in"></i></a></li>
+
+                <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp " aria-hidden="true"
+                      aria-hidden="true"></i></a></li>
+
+                <li><a href="https://github.com/n.ajanth_21" target="_blank"><i class="fab fa-github "
+                      aria-hidden="true"></i></a></li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scroll-top icon -->
+    <div id="scroll-top">
+      <i class="fas fa-level-up-alt fa-3x"></i>
+    </div>
+
+
+    <!-- js and jquery -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="server.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="fetchProduct.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+<script>
+  const basePrice = '100';
+
+  function updatePrice(quantity) {
+    const totalPrice = basePrice * quantity;
+    document.getElementById("product-price").textContent = `$${totalPrice}`;
+  }
+
+  function increaseQuantity() {
+    const quantityInput = document.getElementById("quantity");
+    let quantity = parseInt(quantityInput.value, 10);
+    quantity++;
+    quantityInput.value = quantity;
+    updatePrice(quantity);
+  }
+
+  function decreaseQuantity() {
+    const quantityInput = document.getElementById("quantity");
+    let quantity = parseInt(quantityInput.value, 10);
+    if (quantity > 1) {
+      quantity--;
+      quantityInput.value = quantity;
+      updatePrice(quantity);
+    }
+  }
+
+  function buyNow() {
+    var quantity = document.getElementById("quantity").value;
+    // Implement buy now functionality here (for example, redirect to a checkout page)
+    alert("You have added " + quantity + " hello kitty x build bear to your cart. You can proceed to checkout now.");
+}
+
+function addToCart() {
+    var quantity = document.getElementById("quantity").value;
+    // Implement add to cart functionality here (for example, updating a shopping cart object)
+    alert(quantity + "hello kitty x build bear added to the cart.");
+}
+
+</script>
+
+</body>
+</html>

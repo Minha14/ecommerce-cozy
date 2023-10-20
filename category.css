@@ -1,0 +1,66 @@
+body {
+    background-color: #241d35; /* Pink background */
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #f336a4; /* Navy blue text color */
+}
+
+/* Product card styling */
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: 220px;
+    height: 300px;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+}
+
+.product-card img {
+    max-height: 150px;
+}
+
+.product-card {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Wishlist button */
+.wishlist-button {
+    margin-top: 10px;
+    background-color: #f540a4; /* Navy blue button background */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.wishlist-button.added {
+    background-color: #F4C2C2; /* Pink background for added items */
+    color: #191970; /* Navy blue text color for added items */
+}
+
+/* Cart and Wishlist containers */
+#cart-container, #wishlist-container {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* List styling for cart and wishlist */
+#cart, #wishlist {
+    list-style: none;
+    padding: 0;
+}
+
+/* List item styling for cart and wishlist */
+#cart li, #wishlist li {
+    margin-bottom: 5px;
+}
